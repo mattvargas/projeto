@@ -40,6 +40,8 @@ export class MyApp {
 
     if (this.service.verificarToken()){
       this.nav.push(this.rootPage);
+
+       this.navPush(LoginPage);
     }
 
 
