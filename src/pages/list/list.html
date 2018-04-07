@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Acervo</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <h1>Busca por {{selectedItem}}</h1>
+  <ion-list>
+    <button ion-item *ngFor="let item of books" (click)="itemTapped($event, item)">
+      <ion-icon [name]="item.imageLink" item-start></ion-icon>
+      {{item.title}}
+      <div class="item-note" item-end>
+        {{item.title}} - de <a (click)="agoraFiltraPeloAutorBele()"><i>{{item.author}}</i></a>
+      </div>
+    </button>
+  </ion-list>
+  <div *ngIf="selectedItem" padding>
+    Você navegou here from <b>{{selectedItem.title}}</b>
+  </div>
+</ion-content>

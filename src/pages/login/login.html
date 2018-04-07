@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button primary menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Instituto Infnet</ion-title>
+  </ion-navbar>
+</ion-header>
+
+  <div><img src="https://encrypted-tbn0.gstatic.com/images
+ ?q=tbn:ANd9GcQg96GIZY8n87EaqVZFs7j15cqVVM7rxgGrYu_WG6cm_-sUKNVPKg" id="logo"></div>
+
+  <h3>Área do Aluno</h3>
+
+ <div>
+   <ion-item id="formulario">
+    <ion-label floating>Usuário</ion-label>
+    <ion-input [(ngModel)]="usuario" type="text" value=""></ion-input>
+  </ion-item>
+
+  <ion-item id="formulario">
+    <ion-label floating>Senha</ion-label>
+    <ion-input [(ngModel)]="senha" type="password" value=""></ion-input>
+  </ion-item>
+ </div>
+
+<div padding>
+  <button ion-button login (click)="login()"> Entrar </button>
+</div>

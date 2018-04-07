@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button primary menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Instituto Infnet</ion-title>
+    <ion-buttons end>
+      <button ion-button id="entrar" (click)="irLoginPage()">
+        Entrar
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+
+ <div><img src="https://encrypted-tbn0.gstatic.com/images
+ ?q=tbn:ANd9GcQg96GIZY8n87EaqVZFs7j15cqVVM7rxgGrYu_WG6cm_-sUKNVPKg" id="logo"></div>
+  <p>
+    Caro Aluno,
+  </p>
+  <p>
+    Consulte de forma online o nosso acervo.
+  </p>
+  <ion-searchbar id="buscar" [(ngModel)]="buscaLivro"></ion-searchbar>
+  <div>
+    <button id="button" ion-button search (click)="buscarLivros()">Buscar Livro </button>
+    <button id="button" ion-button search (click)="buscarAutor()">Buscar Autor</button>
+  </div>
+
+
+
+</ion-content>
+<ion-footer>
+
+  <p>Copyright 2018 - Matheus André De Lima Vargas & Samuel Pereira Soares</p>
+
+</ion-footer>
